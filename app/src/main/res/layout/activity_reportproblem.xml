@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportproblemActivity"
+    android:background="@color/yellop">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/report_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="10dp"
+        android:background="@color/yellow_home"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+
+        <ImageView
+            android:id="@+id/report_backbtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report Problem"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/report_backbtn"
+            android:textSize="19sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lato_bold"
+            android:layout_marginStart="10dp"/>
+
+
+        <ImageView
+            android:id="@+id/report_pickimaage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/infonameimg"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/report_formview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/report_header"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/adminborder"
+        android:elevation="20dp">
+
+
+        <View
+            android:id="@+id/report_upperstroke"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+          />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/report_upperstroke"
+            android:layout_marginTop="30dp">
+
+
+
+            <TextView
+                android:id="@+id/report_uppetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can mention any issue you are facing or any serious problem"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_centerHorizontal="true"/>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/report_textcard"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/report_uppetext"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="20dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <EditText
+                        android:id="@+id/report_edxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:hint="Enter message"
+                        android:background="@null"
+                        android:fontFamily="@font/lato_bold"
+                        android:textSize="15sp"
+                        android:padding="15dp"/>
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/report_attachfile"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                app:cardCornerRadius="30dp"
+                android:layout_alignStart="@id/report_textcard"
+                android:layout_below="@id/report_textcard"
+                android:layout_alignEnd="@id/report_textcard"
+                android:elevation="20dp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/reportattach">
+
+                    <ImageView
+                        android:id="@+id/report_imagepreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/report_submitbtn"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/report_attachfile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:shadowRadius="20"
+                android:background="@color/meduim_skin"
+                android:text="SUBMIT"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_black" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

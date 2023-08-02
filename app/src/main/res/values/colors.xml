@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_yellow">#FFE68E</color>
+    <color name="light_grey">#9F9D9D</color>
+    <color name="yellow_home">#FFD234</color>
+    <color name="light_voilet">#D2D1F4</color>
+    <color name="light_red">#FBDEDA</color>
+    <color name="gray">#191919</color>
+
+    <color name="btn_color">#FF735C</color>
+    <color name="edit_text_color">#FFD6CF</color>
+    <color name="hint_text_color">#D4D4D4</color>
+
+
+    <color name="light_gray">#b2b2b2</color>
+    <color name="whiteAlpha">#10FFFFFF</color>
+    <color name="vlight_gray">#E5E5E5</color>
+    <color name="blue">#3EACF3</color>
+    <color name="pop">#EFF3F6</color>
+    <color name="violet">#071965</color>
+    <color name="dark_blue">#3F69DD</color>
+    <color name="red">#E44740</color>
+    <color name="blue2">#0165FF</color>
+    <color name="blue1">#567AE1</color>
+    <color name="dark_violet">#1B2F4F</color>
+    <color name="light_skin">#FFF2CC</color>
+    <color name="meduim_skin">#F4B183</color>
+    <color name="dark_skin">#DFA67B</color>
+    <color name="yellop">#FFD966</color>
+
+    <color name="lighty_grey">#616161</color>
+</resources>

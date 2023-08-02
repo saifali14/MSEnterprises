@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:id="@+id/mapmarkercard"
+
+
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:id="@+id/mapmarkerimage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/officeimage"/>
+
+        <TextView
+            android:id="@+id/mapmarkertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MS Enterprises"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"/>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

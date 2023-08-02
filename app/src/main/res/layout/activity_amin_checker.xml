@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AminCheckerActivity">
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/adminc_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+
+
+
+
+    <TextView
+        android:id="@+id/adminc_passtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passcode"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@id/adminc_passcedxt"
+        android:textStyle="bold"
+        android:textColor="@color/light_grey"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <EditText
+        android:id="@+id/adminc_passcedxt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/phoneauthedxtbg"
+        android:layout_below="@id/adminc_passtxt"
+        android:hint="Enter the passcode"
+        android:inputType="numberPassword"
+        android:paddingStart="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="#606060"
+        />
+
+
+
+        <Button
+            android:id="@+id/adminc_btn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/adminc_passcedxt"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            android:backgroundTint="@color/btn_color"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

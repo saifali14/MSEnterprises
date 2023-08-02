@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:background="@color/yellow_home">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/settingheader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+
+        <ImageView
+            android:id="@+id/setting_backbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/setting_backbtn"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="19sp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/setting_middlec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingheader"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/setting_admincard"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="20dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/light_yellow">
+
+
+
+                    <ImageView
+                        android:id="@+id/setting_adminimage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/adminimg"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin"
+                        android:textSize="16sp"
+                        android:layout_toEndOf="@id/setting_adminimage"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"/>
+
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/back"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"/>
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/setting_tandcard"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="20dp"
+                android:layout_marginTop="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/light_yellow">
+
+
+
+                    <ImageView
+                        android:id="@+id/setting_tandimage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/tandimg"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms And Conditions"
+                        android:textSize="16sp"
+                        android:layout_toEndOf="@id/setting_tandimage"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"/>
+
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/back"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"/>
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/setting_prpcard"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="20dp"
+                android:layout_marginTop="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/light_yellow">
+
+
+
+                    <ImageView
+                        android:id="@+id/setting_prpimage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/privacyimg"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy And Policy"
+                        android:textSize="16sp"
+                        android:layout_toEndOf="@id/setting_prpimage"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"/>
+
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/back"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"/>
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/logoutbtn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Log Out"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/light_grey"
+                android:layout_marginBottom="15dp"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

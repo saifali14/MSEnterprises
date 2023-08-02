@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#FFF2CC"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/acard_pimage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/avatar"/>
+
+
+            <LinearLayout
+                android:id="@+id/acardnnamelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/acard_pimage">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/acard_nameview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saif Ali"
+                        android:textStyle="bold"
+                        android:textSize="15sp"/>
+
+
+                    <TextView
+                        android:id="@+id/acard_timeview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(Just now)"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/light_grey"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/acard_numberview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91 9826080407"
+                    android:textStyle="normal"
+                    android:textColor="@color/light_grey"
+                    android:textSize="13sp"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/acard_open"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/acard_message"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/caution"
+                android:layout_centerVertical="true"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/acard_message"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/acard_messageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="We have some issue in our sewage pipe."
+                        android:textColor="#737373"
+                        android:layout_marginStart="5dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp">
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/acard_mapcard"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/googlemap"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+
+                        />
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/acard_addressview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23-Bhosle Colony, BNP Road Dewas M.P"
+                android:layout_toEndOf="@id/acard_mapcard"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="#989898"
+                android:textSize="12sp"
+                android:layout_alignParentEnd="true"
+                android:maxLines="2"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
